@@ -1,0 +1,198 @@
+PubMed:
+  lr: 0.001
+  down_lr: 0.01
+  hid_dim: 1024
+  num_layer: 2
+  epoch: 300
+  down_epoch: 300
+  kernel: heat
+  act: prelu
+  beta: 1.0
+  dec_aggr: max
+  sparse: True
+Computers:
+  lr: 0.001
+  down_lr: 0.01
+  hid_dim: 512
+  num_layer: 2
+  epoch: 1000
+  down_epoch: 300
+  kernel: heat
+  act: prelu
+  beta: 0.4
+  single: True
+  emb_act: True
+  nonskip: True
+  sparse: True
+Photo:
+  lr: 0.001
+  down_lr: 0.01
+  hid_dim: 512
+  num_layer: 2
+  epoch: 1000
+  down_epoch: 300
+  kernel: heat
+  act: prelu
+  beta: 0.5
+  single: True
+  nonskip: True
+  sparse: True
+CS:
+  lr: 0.001
+  down_lr: 0.01
+  hid_dim: 512
+  num_layer: 2
+  epoch: 150
+  down_epoch: 300
+  kernel: heat
+  act: prelu
+  beta: 0.5
+  single: True
+  sparse: True
+Physics:
+  lr: 0.001
+  down_lr: 0.01
+  hid_dim: 512
+  num_layer: 2
+  epoch: 150
+  down_epoch: 300
+  kernel: heat
+  act: prelu
+  beta: 0.2
+  single: True
+  emb_act: True
+  sparse: True
+IMDB-BINARY:
+  lr: 0.0001
+  hid_dim: 512
+  num_layer: 2
+  batch_size: 32
+  decay_rate: 1
+  epoch: 100
+  kernel: ppr
+  act: prelu
+  norm: batchnorm
+  beta: 1.5
+  dec_aggr: max
+  pooler: avg
+  sparse: True
+IMDB-MULTI:
+  lr: 0.0001
+  hid_dim: 512
+  num_layer: 3
+  batch_size: 32
+  decay_rate: 1
+  epoch: 100
+  kernel: ppr
+  act: prelu
+  norm: batchnorm
+  beta: 1.5
+  dec_aggr: avg
+  pooler: avg
+  sparse: True
+PROTEINS:
+  lr: 0.0001
+  hid_dim: 512
+  num_layer: 3
+  batch_size: 32
+  decay_rate: 1
+  epoch: 10
+  kernel: ppr
+  act: prelu
+  norm: batchnorm
+  beta: 1.0
+  dec_aggr: avg
+  pooler: max
+  sparse: True
+COLLAB:
+  lr: 0.0001
+  hid_dim: 512
+  num_layer: 3
+  batch_size: 32
+  decay_rate: 1
+  epoch: 20
+  kernel: ppr
+  act: prelu
+  norm: batchnorm
+  beta: 1.0
+  pooler: max
+  single: True
+  sparse: True
+DD:
+  lr: 0.0001
+  hid_dim: 512
+  num_layer: 3
+  batch_size: 32
+  decay_rate: 1
+  epoch: 40
+  kernel: ppr
+  act: prelu
+  norm: batchnorm
+  beta: 1.0
+  dec_aggr: avg
+  pooler: sum
+  sparse: True
+NCI1:
+  lr: 0.0005
+  hid_dim: 512
+  num_layer: 3
+  batch_size: 16
+  decay_rate: 1
+  epoch: 500
+  kernel: heat
+  act: prelu
+  norm: batchnorm
+  beta: 0.5
+  pooler: max
+  single: True
+  nonskip: True
+  sparse: True
+
+Cora:
+  lr: 0.001
+  down_lr: 0.01
+  hid_dim: 512
+  num_layer: 2
+  epoch: 100
+  down_epoch: 300
+  kernel: ppr
+  act: prelu
+  beta: 0.9
+  dec_aggr: max
+  # sparse: True
+  emb_act: True
+
+CiteSeer:
+  lr: 0.001
+  down_lr: 0.01
+  down_l2: 0.01
+  hid_dim: 512
+  num_layer: 2
+  epoch: 100
+  down_epoch: 300
+  kernel: ppr
+  act: prelu
+  beta: 1
+  dec_aggr: sum
+  nonskip: True
+  # sparse: True
+  # emb_act: True
+
+ogbn-arxiv:
+  lr: 0.001
+  down_lr: 0.01
+  down_l2: 0.0005
+  hid_dim: 768
+  num_layer: 3
+  epoch: 120
+  down_epoch: 600
+  kernel: ppr
+  act: prelu
+  beta: 0.8
+  dec_aggr: max
+  nonskip: True
+  single: True
+  simple: True
+  norm: layernorm
+  sparse: True
+  # emb_act: True
