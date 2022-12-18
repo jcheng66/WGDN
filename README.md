@@ -2,7 +2,7 @@
 
 This is the official implementation of the following paper:
 
-[Wiener Graph Deconvolutional Network Improves Self-Supervised Learning](xxxxxxx)  
+[Wiener Graph Deconvolutional Network Improves Self-Supervised Learning](https://arxiv.org/abs/2206.12933)  
 *Jiashun Cheng, Man Li, Jia Li, Fugee Tsung; AAAI 2023*
 
 Dependencies
