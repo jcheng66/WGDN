@@ -51,11 +51,10 @@ Citing
 If you find this work is helpful to your research, please consider citing our paper:
 
 ```
-@article{cheng2022wgdn,
-  title={Wiener Graph Deconvolutional Network Improves Self-Supervised Learning},
+@article{cheng2022latent,
+  title={Latent Augmentation For Better Graph Self-Supervised Learning},
   author={Cheng, Jiashun and Li, Man and Li, Jia and Tsung, Fugee},
-  journal={xx},
-  pages={xx},
+  journal={arXiv preprint arXiv:2206.12933},
   year={2022}
 }
 ```
